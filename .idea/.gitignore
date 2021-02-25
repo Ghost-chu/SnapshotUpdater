@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../SnapshotUpdater\.idea/codestream.xml
+# Datasource local storage ignored files
+/../../../../../:\Code Workspace\Java\SnapshotUpdater\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
