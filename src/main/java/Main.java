@@ -60,8 +60,9 @@ public class Main {
                 }
             }
         });
-        thread.start();
         thread.setDaemon(true);
+        thread.start();
+
     }
 
     private static Instrumentation inst = null;
