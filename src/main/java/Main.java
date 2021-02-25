@@ -44,7 +44,7 @@ public class Main {
         }
         System.out.println("Selected snapshot: "+ new String(Files.readAllBytes(versionFile.toPath()), StandardCharsets.UTF_8)+", starting...");
         boot(args);
-        new Thread(() -> {
+        Thread thread = new Thread(() -> {
             while (true){
                 try {
                     System.out.println("Checking for snapshot updates...");
@@ -59,7 +59,9 @@ public class Main {
                     e.printStackTrace();
                 }
             }
-        }).start();
+        });
+        thread.start();
+        thread.setDaemon(true);
     }
 
     private static Instrumentation inst = null;
