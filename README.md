@@ -8,7 +8,7 @@ This project based on https://github.com/PaperMC/Paperclip, thanks for a great j
 #!/usr/bin/sh
 while true
 do
-java -jar SnapShotUpdater.jar <optional minecraft args like --forceUpgrade>
+java -Xmx10G -jar SnapShotUpdater.jar <optional minecraft args like --forceUpgrade>
 done
 ```
 Java 9+ is required.
