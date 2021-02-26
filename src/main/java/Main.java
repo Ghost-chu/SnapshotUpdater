@@ -54,7 +54,7 @@ public class Main {
                     }else{
                         System.out.println("Snapshot server already up-to-date");
                     }
-                    Thread.sleep(60*1000*600);
+                    Thread.sleep(1000*600);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
